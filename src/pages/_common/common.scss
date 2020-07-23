@@ -1,0 +1,59 @@
+@import "~/components/_common/fonts.scss";
+@import "~/components/_common/vars.scss";
+@import "~/components/_common/mixins.scss";
+@import "~/components/_common/reset.scss";
+@import "~/components/_common/start.scss";
+
+@import "~/components/blocks/footer/footer.scss";
+@import "~/components/blocks/header/header.scss";
+@import "~/components/blocks/dropdawn-icon/dropdawn-icon.scss";
+
+.container {
+	max-width: 1014px;
+	padding: 0 20px;
+	margin: 0 auto;
+	height: 100%;
+	@media (max-width: 430px) {
+		padding: 0 23px;
+	}
+	&_footer {
+		@media (max-width: 430px) {
+			padding: 0 30px;
+		}
+	}
+	&_product-block {
+		@media (max-width: 700px) {
+			padding: 0;
+		}
+		@media (max-width: 430px) {
+			padding: 0;
+		}
+	}
+}
+
+.ibg > img {
+	display: none;
+}
+
+.ibg {
+	&__item > img {
+		display: none;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.main {
+	flex: 1 1 auto;
+	&__content {
+		padding: 62px 0 70px 0;
+		background-color: #fafafa;
+		@media (max-width: 700px) {
+			padding: 22px 0 35px 0;
+		}
+	}
+}
